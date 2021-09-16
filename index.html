@@ -41,7 +41,7 @@
         </nav>
         <div id="cover" class="card bg-dark text-white position-absolute top-0 start-0 placeholder col-12">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pair_of_Merops_apiaster_feeding.jpg"
-                class="card-img" alt="Pair of Merops apiaster feeding" onload="stopPlaceholderAnimation();">
+                class="card-img vh-100" style="object-fit: cover;" alt="Pair of Merops apiaster feeding" onload="stopPlaceholderAnimation();">
             <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                 <h5 class="card-title">Hairy Frostbite</h5>
                 <p class="card-text">Ut accumsan eget felis vitae condimentum</p>
@@ -64,10 +64,16 @@
         -->
 
     <script>
+        /*
+        * stop the loading animation when the cover image is loaded
+        */
         function stopPlaceholderAnimation() {
             document.getElementById('cover').classList.remove('placeholder', 'col-12')
         }
 
+        /*
+        * hide the navbar on scroll down, show on scroll up
+        */
         function hideNavOnScroll() {
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("navbar").classList.add('visually-hidden');
