@@ -13,9 +13,9 @@
     <title>Hairy Frostbite</title>
 </head>
 
-<body>
+<body onscroll="hideNavOnScroll();">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Hairy Frostbite</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#">Condimentum</a>
                         </li>
                     </ul>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Link</a>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">ELIT</a>
                 </div>
             </div>
         </nav>
@@ -66,6 +66,14 @@
     <script>
         function stopPlaceholderAnimation() {
             document.getElementById('cover').classList.remove('placeholder', 'col-12')
+        }
+
+        function hideNavOnScroll() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar").classList.add('visually-hidden');
+            } else {
+                document.getElementById("navbar").classList.remove('visually-hidden');
+            }
         }
     </script>
 </body>
