@@ -15,27 +15,27 @@
 
 <body onscroll="hideNavOnScroll();">
     <div class="container-fluid">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent py-3 px-5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hairy Frostbite</a>
+                <a class="navbar-brand fs-3 text-light" href="#">Hairy Frostbite</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Donec</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 fw-lighter">
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-light" href="#">Donec</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proin</a>
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-light" href="#">Proin</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Condimentum</a>
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-light" href="#">Condimentum</a>
                         </li>
                     </ul>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">ELIT</a>
+                    <a class="btn border rounded-0 btn-lg mx-3 px-4 py-3 text-light fs-6" href="#" role="button">ELIT</a>
                 </div>
             </div>
         </nav>
@@ -43,9 +43,11 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pair_of_Merops_apiaster_feeding.jpg"
                 class="card-img vh-100 vw-100" style="object-fit: cover;" alt="Pair of Merops apiaster feeding" onload="stopPlaceholderAnimation();">
             <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                <h5 class="card-title">Hairy Frostbite</h5>
-                <p class="card-text">Ut accumsan eget felis vitae condimentum</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+                <div class="content-wrapper">
+                    <h5 class="card-title display-2 fw-normal">Hairy Frostbite</h5>
+                <p class="card-text fs-3 fw-lighter">Ut accumsan eget felis vitae condimentum</p>
+                <a class="btn border rounded-0 btn-lg px-4 py-3 text-light fs-6" href="#" role="button">ELIT</a>
+                </div>
             </div>
         </div>
     </div>
